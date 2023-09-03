@@ -1,0 +1,239 @@
+PARTE 1
+
+genera un sitio web estático para PUBLICAR DIBUJOS (almacenados en archivos png) escrito solamente en HTML y CSS. El sitio debe cumplir con las siguientes características:
+
+1) Debe tener una barra de navegación con enlaces a "Información de contacto", "Información sobre quien mantiene el sitio" y "Catálogo de los dibujos" 
+
+
+Cuando se selecciona "Información de contacto" debe mostrar un formulario simple con los siguientes datos: Email: juliarojasar@gmail.com", Teléfono: 221 111 1111
+/Aclaración/ No indica la información de contacto de quién
+
+Cuando se selecciona "Información sobre quien mantiene el sitio" debe mostrar el siguiente texto: "Mi nombre es Julia Rojas, soy estudiante de la facultad de Informática de la UNLP y actualmente me encuentro cursando la materia Proyecto de Software." 
+
+Cuando se selecciona "Catálogo de los dibujos" debe mostrar las opciones con enlaces a las secciones "Caricaturas", "Paisajes" y "Animé"
+
+/2.1)/ Al no tener especificaciones especificas sobre el estilo, no le doy mucha identidad
+	
+3) Cuando se selecciona una categoría (entre "Caricaturas", "Paisajes" y "Animé")
+   Se muestran los dibujos correspondientes en la zona central de la página. Siempre de forma estática.
+   
+4) cada dibujo debe tener un mismo borde y relleno (un marco)
+
+5) el sitio debe ser RESPONSIVO
+
+7) reglas de estilo deben estar en un archivo separado denominado estilosIA.css
+
+8) debe haber por lo menos 2 dibujos por categoría.
+Estos deben estar en el directorio imágenes.
+
+-------------------------------------------------------------------------------------
+(1.1) Modificaciones:
+
+a) La barra de navegación con los enlaces a "Información de contacto", "Información sobre quien mantiene el sitio" y "Catálogo de los dibujos" debe ser lateral y tener una tipografía mas grande y en negrita. 
+
+b) Las opciones "Caricaturas", "Paisajes" y "Animé" deben desplegarse solamente al seleccionar "Catálogo de los dibujos" 
+
+c) Las imágenes deben mostrarse solamente al seleccionar la categoría correspondiente: Si se selecciona "Caricaturas" se muestran las dos imágenes de caricaturas.
+Si se selecciona "Paisajes" se muestran las dos imágenes de paisajes.
+Si se selecciona "Animé" se muestran las dos imágens de animé.
+
+------------ Segunda vuelta ---------------
+(1.2) Modificaciones a aplicar al codigo anteriormente generado solamente con HTML y CSS:
+
+a) La barra de navegación con los enlaces a "Información de contacto", "Información sobre quien mantiene el sitio" y "Catálogo de los dibujos" debe encontrarse arriba y tener una tipografía mas grande y en negrita. El color del fondo debe ser de un verde pastel.
+
+b) Las opciones "Caricaturas", "Paisajes" y "Animé" deben aparecer en formato de lista desplegable solamente cuando el usuario selecciona "Catálogo de los dibujos" 
+
+c) Las imágenes deben mostrarse solamente al seleccionar la categoría correspondiente: Si se selecciona "Caricaturas" se muestran las dos imágenes de caricaturas.
+Si se selecciona "Paisajes" se muestran las dos imágenes de paisajes.
+Si se selecciona "Animé" se muestran las dos imágens de animé.
+
+Si no se selecciona ninguna categoría las imágenes no se visualizan.
+
+---------- Tercera vuelta ---------------
+(1.3) Realiza las modificaciones indicadas en la solicitud anterior sin utilizar los scripts, pudiento utilizar mas de un archivo html // NO FUNCIONA
+
+----------- Cuarta vuelta ---------------
+(1.4) Modificaciones a aplicar al codigo anteriormente generado solamente con HTML y CSS:
+
+a) EL título "Sitio de dibujos" en la barra de navegación debe tener tipografía Fantasy.
+
+b) /Consulté como serían los botones de radio y los visualicé en un visualizador de html online/Las opciones "Caricaturas", "Paisajes" y "Animé" deben aparecer en formato de radio buttons.
+
+c) Las imágenes deben mostrarse solamente al seleccionar la categoría correspondiente: Si se selecciona "Caricaturas" se muestran las dos imágenes de caricaturas.
+Si se selecciona "Paisajes" se muestran las dos imágenes de paisajes.
+Si se selecciona "Animé" se muestran las dos imágens de animé.
+
+
+---------- Quinta vuelta -------------
+El siguiente código no funciona, solamente muestra la barra de navegación, mientras que se debe mostrar también la seccion-catalogo: 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Catálogo de Dibujos</title>
+</head>
+<body>
+    <header class="barra-navegacion">
+        <h1 style="font-family: Crimson Text;">Sitio de Dibujos</h1>
+        <nav>
+            <ul>
+                <li><a href="informacion-contacto.html">Información de contacto</a></li>
+                <li><a href="informacion-mantenedor.html">Información sobre quien mantiene el sitio</a></li>
+                <li><a href="catalogo-dibujos.html">Catálogo de los dibujos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="seccion-catalogo">
+        <h2>Catálogo de los dibujos</h2>
+        <form>
+            <label>
+                <input type="radio" name="categoria" value="caricaturas">
+                Caricaturas
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="paisajes">
+                Paisajes
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="anime">
+                Animé
+            </label><br>
+        </form>
+    </section>
+</body>
+</html>
+
+¿Qué debo modificar para que funcione?
+
+Me indicó que podía haber errores en el CSS que ocultasen lo mencionado, por lo que le compartí el código del css y me señaló la propiedad display: none que debía ser cambiada mediante un script. La eliminé y ahora visualiza correctamente
+
+---------- Sexta vuelta ------------
+
+modifique el siguiente archivo utilizando solamente HTML y CSS para que Si se selecciona "Caricaturas" se muestran dos imágenes de caricaturas, Si se selecciona "Paisajes" se muestran dos imágenes de paisajes y Si se selecciona "Animé" se muestran dos imágens de animé.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Catálogo de Dibujos</title>
+</head>
+<body>
+    <header class="barra-navegacion">
+        <h1 style="font-family: Crimson Text;">Sitio de Dibujos</h1>
+        <nav>
+            <ul>
+                <li><a href="informacion-contacto.html">Información de contacto</a></li>
+                <li><a href="informacion-mantenedor.html">Información sobre quien mantiene el sitio</a></li>
+                <li><a href="catalogo-dibujos.html">Catálogo de los dibujos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="seccion-catalogo">
+        <h2>Catálogo de los dibujos</h2>
+        <form>
+            <label>
+                <input type="radio" name="categoria" value="caricaturas">
+                Caricaturas
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="paisajes">
+                Paisajes
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="anime">
+                Animé
+            </label><br>
+        </form>
+    </section>
+</body>
+</html>
+
+
+------- Séptima vuelta ----------------
+ MOdifique el siguiente código para que las opciones caricatura, paisajes y animé en vez de botones de radio sean enlaces que dirijan: caricatura a un archivo html con titulo caricaturas y contenga 2 imagenes, paisajes a un archivo html con titulo Paisajes con 2 imagenes, animé a un archivo html con titulo Animé con 2 imagenes.
+ TOdas las imágenes con borde y relleno  
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Catálogo de Dibujos</title>
+</head>
+<body>
+    <header class="barra-navegacion">
+        <h1 style="font-family: Crimson Text;">Sitio de Dibujos</h1>
+        <nav>
+            <ul>
+                <li><a href="informacion-contacto.html">Información de contacto</a></li>
+                <li><a href="informacion-mantenedor.html">Información sobre quien mantiene el sitio</a></li>
+                <li><a href="catalogo-dibujos.html">Catálogo de los dibujos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="seccion-catalogo">
+        <h2>Catálogo de los dibujos</h2>
+        <form>
+            <label>
+                <input type="radio" name="categoria" value="caricaturas">
+                Caricaturas
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="paisajes">
+                Paisajes
+            </label><br>
+            <label>
+                <input type="radio" name="categoria" value="anime">
+                Animé
+            </label><br>
+        </form>
+    </section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+.imagen {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+}
+
+
+
+---------------------------------------------------------------------------------------
+
+PARTE 2
+
+1) mostrar interacción con la IA y el proceso de generación de archivos para la actividad
+
+2) mostrar la ejecución del código obtenido originalmente
+¿Cuál es el cliente web que ejecuta el código? // ¿¿??
+
+3) Indicar elementos HTML del encabezado
+
+4) identificar si tiene TAGS SEMÁNTICOS // ¿¿??
+
+5) explicar reglas del archivo de estilos
+
+6) que significa que el diseño sea responsivo, donde se indica 
+
+7) 
+
+

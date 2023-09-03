@@ -1,0 +1,95 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para categorías */
+.categorias {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para galería de imágenes */
+.galeria {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.galeria h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.imagen {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .categorias ul {
+        text-align: center;
+    }
+
+    .categorias li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}

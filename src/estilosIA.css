@@ -1,0 +1,90 @@
+/* estilosIA.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.barra-navegacion {
+    background-color: #f5a19b;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.barra-navegacion h1 {
+    margin: 0;
+}
+
+.barra-navegacion nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.barra-navegacion nav li {
+    margin-bottom: 10px;
+}
+
+.barra-navegacion nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.seccion-informacion,
+.seccion-catalogo,
+.seccion-dibujos {
+    background-color: #fff;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.seccion-informacion h2,
+.seccion-catalogo h2,
+.seccion-dibujos h2 {
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+form label {
+    font-size: 18px;
+}
+
+
+.imagen {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .barra-navegacion nav ul {
+        text-align: left;
+        display: block;
+    }
+
+    .barra-navegacion nav li {
+        margin-bottom: 10px;
+    }
+
+    .seccion-catalogo ul {
+        text-align: left;
+    }
+}
